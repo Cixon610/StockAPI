@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authentication.Negotiate;
+//using Microsoft.AspNetCore.Authentication.Negotiate;
 using Microsoft.Extensions.Options;
 using StockAPI.Model;
 using StockAPI.Services;
@@ -18,14 +18,14 @@ builder.Services.AddControllers()
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
-   .AddNegotiate();
+//builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
+//   .AddNegotiate();
 
-builder.Services.AddAuthorization(options =>
-{
-    // By default, all incoming requests will be authorized according to the default policy.
-    options.FallbackPolicy = options.DefaultPolicy;
-});
+//builder.Services.AddAuthorization(options =>
+//{
+//    // By default, all incoming requests will be authorized according to the default policy.
+//    options.FallbackPolicy = options.DefaultPolicy;
+//});
 
 builder.Services.Configure<BookstoreDatabaseSettings>(configuration.GetSection(nameof(BookstoreDatabaseSettings)));
 builder.Services.AddSingleton<IBookstoreDatabaseSettings>(sp =>  sp.GetRequiredService<IOptions<BookstoreDatabaseSettings>>().Value);
@@ -42,8 +42,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthentication();
-app.UseAuthorization();
+//app.UseAuthentication();
+//app.UseAuthorization();
 
 app.MapControllers();
 
