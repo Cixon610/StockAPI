@@ -1,4 +1,4 @@
-﻿namespace StockAPI.Model
+﻿namespace Stock.Api.Model
 {
     public class BookstoreDatabaseSettings : IBookstoreDatabaseSettings
     {

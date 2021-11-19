@@ -7,7 +7,7 @@
     }
   },
   "profiles": {
-    "StockAPI": {
+    "Stock.Api": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

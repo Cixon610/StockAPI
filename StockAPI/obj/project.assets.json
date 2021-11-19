@@ -1058,9 +1058,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitMine\\StockAPI\\StockAPI\\StockAPI.csproj",
-      "projectName": "StockAPI",
-      "projectPath": "D:\\GitMine\\StockAPI\\StockAPI\\StockAPI.csproj",
+      "projectUniqueName": "D:\\GitMine\\StockAPI\\StockAPI\\Stock.Api.csproj",
+      "projectName": "Stock.Api",
+      "projectPath": "D:\\GitMine\\StockAPI\\StockAPI\\Stock.Api.csproj",
       "packagesPath": "C:\\Users\\ryan.chang\\.nuget\\packages\\",
       "outputPath": "D:\\GitMine\\StockAPI\\StockAPI\\obj\\",
       "projectStyle": "PackageReference",

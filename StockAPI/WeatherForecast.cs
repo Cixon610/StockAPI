@@ -1,4 +1,4 @@
-namespace StockAPI;
+namespace Stock.Api;
 public class WeatherForecast
 {
     public DateTime Date { get; set; }

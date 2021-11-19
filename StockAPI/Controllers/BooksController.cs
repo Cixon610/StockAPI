@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using StockAPI.Model;
-using StockAPI.Services;
+using Stock.Api.Model;
+using Stock.Api.Services;
 
 namespace BooksApi.Controllers
 {

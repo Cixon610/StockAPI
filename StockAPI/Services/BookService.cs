@@ -1,7 +1,7 @@
 ﻿using MongoDB.Driver;
-using StockAPI.Model;
+using Stock.Api.Model;
 
-namespace StockAPI.Services
+namespace Stock.Api.Services
 {
     public class BookService
     {

@@ -1,12 +1,13 @@
-//using Microsoft.AspNetCore.Authentication.Negotiate;
 using Microsoft.Extensions.Options;
-using StockAPI.Model;
-using StockAPI.Services;
+using Stock.Api.Model;
+using Stock.Api.Services;
 
 //Add json file
-IConfiguration configuration = new ConfigurationBuilder()
+IConfiguration appsettings = new ConfigurationBuilder()
                             .AddJsonFile("appsettings.json")
                             .Build();
+
+Environment.GetEnvironmentVariable("DATABASE_URL");
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,16 +19,7 @@ builder.Services.AddControllers()
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
-//   .AddNegotiate();
-
-//builder.Services.AddAuthorization(options =>
-//{
-//    // By default, all incoming requests will be authorized according to the default policy.
-//    options.FallbackPolicy = options.DefaultPolicy;
-//});
-
-builder.Services.Configure<BookstoreDatabaseSettings>(configuration.GetSection(nameof(BookstoreDatabaseSettings)));
+builder.Services.Configure<BookstoreDatabaseSettings>(appsettings.GetSection(nameof(BookstoreDatabaseSettings)));
 builder.Services.AddSingleton<IBookstoreDatabaseSettings>(sp =>  sp.GetRequiredService<IOptions<BookstoreDatabaseSettings>>().Value);
 builder.Services.AddSingleton<BookService>();
 
@@ -41,9 +33,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-//app.UseAuthentication();
-//app.UseAuthorization();
 
 app.MapControllers();
 

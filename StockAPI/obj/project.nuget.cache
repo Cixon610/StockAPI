@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f7HRAXxCgmsZ7bPvbjlIJkSlV7JB4QmuQ+mrHQxJcsnpEjzja6LbcVcFoaGjK0QqPvOuguMV/pZqOlv/1QfabA==",
+  "dgSpecHash": "nFmgXitUYbUt55gsuEAS9YQscfcig0drO8M/Bff/H6UcF09A26VCB9/DAsnnsu99VdbViTUrmz57qis/QBm86Q==",
   "success": true,
-  "projectFilePath": "D:\\GitMine\\StockAPI\\StockAPI\\StockAPI.csproj",
+  "projectFilePath": "D:\\GitMine\\StockAPI\\StockAPI\\Stock.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ryan.chang\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\ryan.chang\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\6.0.0\\microsoft.aspnetcore.authentication.negotiate.6.0.0.nupkg.sha512",

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace StockAPI.Controllers
+namespace Stock.Api.Controllers
 {
     [Authorize]
     [ApiController]
